@@ -28,6 +28,8 @@ function generatePassword() {
   return newPassword.join('');
 }
 
+/* Function that prompts the user for what criteria they would like their password to have.
+This function is passed into generatePassword(). */
 function criteriaPrompt() {
   var upperCasePrompt = window.confirm("Would you like to include uppercase letters?");
   var lowerCasePrompt = window.confirm("Would you like to include lowercase letters?");
@@ -56,6 +58,8 @@ function criteriaPrompt() {
   return criteriaArray;
 }
 
+/* The next four functions convert the characters that will be used
+to create the password into an array. */
 function getLower() {
 	var letters = 'abcdefghijklmnopqrstuvwxyz';
   var lettersArray = letters.split('');
@@ -80,15 +84,16 @@ function getSymbols() {
   return characterArray;
 }
 
+// Generates a random number that is in the generatePassword() function.
 var randomNumber = function(min, max) {
   var value = Math.floor(Math.random() * (max - min + 1) + min);
   return value;
 };
 
-// Get references to the #generate element
+// Get references to the #generate element.
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Writes password to the #password input.
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -99,5 +104,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Event listener for when user clicks "Generate Password".
 generateBtn.addEventListener("click", writePassword);
