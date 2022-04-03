@@ -12,6 +12,7 @@ specific criteria of their choosing.
 ![_C__Users_Luis%20Riveros_Desktop_projects_password-generator_index html](https://user-images.githubusercontent.com/78315917/161438260-5f4902fb-2fe8-491e-aa84-efd9dc1c0541.png)
 
 Website: https://luimr88.github.io/password-generator/
+Github Repository: https://github.com/luimr88/password-generator
 
 ## Contribution
 HTML and CSS code provided by The University of Utah Bootcamp. Javascript code done by Luis Riveros.
