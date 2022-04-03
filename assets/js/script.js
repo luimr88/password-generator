@@ -39,6 +39,8 @@ function criteriaPrompt() {
   if (upperCasePrompt === false && lowerCasePrompt === false && numberPrompt === false && specialPrompt === false) {
     window.alert("You must select at least one criteria to generate a password.");
     return criteriaPrompt();
+  } else {
+    window.alert("Generating Password!");
   }
 
   var criteriaArray = [];
